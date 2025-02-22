@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teachable Machine Image Model</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .small-image {
+            width: 50%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -83,9 +89,9 @@
 
             // Update the image based on the highest prediction
             if (highestPrediction.className === "Pajaros") {
-                document.getElementById("image-container").innerHTML = '<img src="Realistic-Angry-Bird-meme-8.jpg" alt="Bird Meme" />';
+                document.getElementById("image-container").innerHTML = '<img src="Realistic-Angry-Bird-meme-8.jpg" alt="Bird Meme" class="small-image" />';
             } else if (highestPrediction.className === "Peces") {
-                document.getElementById("image-container").innerHTML = '<img src="memepez.jpg" alt="Fish Meme" />';
+                document.getElementById("image-container").innerHTML = '<img src="memepez.jpg" alt="Fish Meme" class="small-image" />';
             }
         }
     </script>
