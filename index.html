@@ -72,8 +72,9 @@
                 const classPrediction =
                     prediction[i].className + ": " + prediction[i].probability.toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
+                console.log("-----------------");
                 console.log(classPrediction);
-                console.log(prediction[i].className);
+                console.log("-----------------");
                 // Check the class name and update the image accordingly
                 if (prediction[i].className === "Pajaros") {
                     document.getElementById("image-container").innerHTML = '<img src="Realistic-Angry-Bird-meme-8.jpg" alt="Bird Meme" />';
